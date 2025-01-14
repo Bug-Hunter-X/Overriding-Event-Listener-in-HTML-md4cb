@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Correct way to add multiple event listeners using addEventListener
+    document.getElementById("myDiv").addEventListener("click", function() {
+      alert('hello');
+    });
+    document.getElementById("myDiv").addEventListener("click", function() {
+      alert('world');
+    });
+  </script>
+</body>
+</html>
